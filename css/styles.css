@@ -1,3 +1,21 @@
+#fullWidthBar {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: #CC0066;
+  color: #fff;
+  height: 200px;
+}
+#headline {
+  margin-top: 30px;
+}
+
+.jumbotron {
+  background-color: #CCCC99;
+  color: #000;
+  radius: 0px;
+}
+
 #prelimOrder {
   display: none;
 }
