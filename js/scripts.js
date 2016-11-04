@@ -18,6 +18,17 @@ PizzaOrder.prototype.pizzaCost = function() {
   return this.cost;
 }
 
+PizzaOrder.prototype.pizzaSize = function () {
+  if (this.size === 1) {
+    this.size = "small";
+  } else if (this.size === 2){
+    this.size = "medium";
+  } else if (this.size === 3){
+    this.size = "large";
+  }
+  return this.size;
+}
+
 
 
 
@@ -56,6 +67,9 @@ $(document).ready(function() {
 
     console.log(newPizzaOrder.cost);
 
-    $("#prelimOrder").text("The pizza you ordered will cost $" + newPizzaOrder.cost + ".00");
+    newPizzaOrder.pizzaSize();
+
+
+    $("#prelimOrder").text("The " + newPizzaOrder.size + " pizza you ordered with " + newPizzaOrder.toppingsTotal + " toppings will cost $" + newPizzaOrder.cost + ".00");
   });
 });
