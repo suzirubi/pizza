@@ -1,6 +1,18 @@
-.orderDisplay {
-  margin-top: 20px;
-}
 #prelimOrder {
   display: none;
+}
+
+.orderDisplay {
+  display: none;
+  margin-top: 20px;
+}
+.orderDisplay p {
+  background-color: #FFF;
+}
+.addtionalOrder {
+  display: none;
+  margin-top: 20px;
+}
+.additionalOrder p {
+  background-color: #FFF;
 }

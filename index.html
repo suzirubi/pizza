@@ -10,56 +10,62 @@
   <body>
     <div class="container">
       <h2>Order Pizza</h2>
-        <div class="row">
-          <div class="col-md-6">
+      <form id="orderSize">
+        <div class="row well">
+          <div class="col-md-4">
             <h5>select pizza size:</h5>
-            <form id="orderSize">
-              <div class="radio">
-                <label for="small">
-                <input type="radio" name="size" id="small" value="1" checked="">
-                small
-                </label>
-              </div>
-              <div class="radio">
-                <label for="medium">
-                <input type="radio" name="size" id="medium" value="2">
-                medium
-                </label>
-              </div>
-              <div class="radio">
-                <label for="large">
-                <input type="radio" name="size" id="large" value="3">
-                large
-                </label>
-              </div>
-              <div class="toppings">
-                <h5>select pizza toppings:</h5>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="typeTopping" value="pepperoni" id="pepperoni">
-                    pepperoni
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="typeTopping" value="cheese" id="cheese">
-                    cheese
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="typeTopping" value="olive" id="olive">
-                    olive
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-danger">submit</button>
-              </div>
+            <div class="radio">
+              <label for="small">
+              <input type="radio" name="size" id="small" value="1" checked="">
+              small
+              </label>
             </div>
-          </form>
-          <div class="orderDisplay">
-            <span id="prelimOrder"></span>
+            <div class="radio">
+              <label for="medium">
+              <input type="radio" name="size" id="medium" value="2">
+              medium
+              </label>
+            </div>
+            <div class="radio">
+              <label for="large">
+              <input type="radio" name="size" id="large" value="3">
+              large
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4 toppings">
+            <h5>select pizza toppings:</h5>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="typeTopping" value="pepperoni" id="pepperoni">
+                pepperoni
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="typeTopping" value="cheese" id="cheese">
+                cheese
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="typeTopping" value="olive" id="olive">
+                olive
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>review your order</h5>
+            <button type="submit" class="btn btn-success">submit</button>
           </div>
         </div>
+      </form>
+      <div class="row orderDisplay well">
+        <p><span id="prelimOrder"></span></p>
+      </div>
+      <div class="row additionalOrder well">
+
+      </div>
     </div>
   </body>
 </html>

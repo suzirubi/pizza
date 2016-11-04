@@ -25,11 +25,12 @@ PizzaOrder.prototype.pizzaCost = function() {
 
 
 $(document).ready(function() {
-      $("prelimOrder").hide();
+  $("#prelimOrder").hide();
+  $(".orderDisplay").hide();
+  $(".additionalOrder").hide();
+
   $("form#orderSize").submit(function(event) {
     event.preventDefault();
-
-
 
     var userSizeInput = parseInt($("input[type='radio'][name='size']:checked").val());
     console.log(userSizeInput);
@@ -48,13 +49,13 @@ $(document).ready(function() {
     var newPizzaOrder = new PizzaOrder (userSizeInput, toppingTotal);
 
     newPizzaOrder.pizzaCost();
+
     $("#prelimOrder").show();
+    $(".orderDisplay").show();
+    $(".additionalOrder").show();
 
     console.log(newPizzaOrder.cost);
 
-
-
-    $("#prelimOrder").text("The pizza you ordered will cost $" + newPizzaOrder.cost + ".00")
-
+    $("#prelimOrder").text("The pizza you ordered will cost $" + newPizzaOrder.cost + ".00");
   });
 });
