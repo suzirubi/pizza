@@ -34,45 +34,51 @@ The instructions for the requirements of this project are as follows:
 
 ##Specifications
 
-- [ ] Create html and css styles with one form with input selectors for pizza size and pizza toppings with area for display of pizza ordered and cost.
-   -  Example Input: Select pizza size, select pizza toppings, enter name
+- [ ] Create html and css styles with one form that includes input selectors for pizza size and pizza toppings with area for display of pizza ordered and cost.
+    -  Example Input: Select pizza size, select pizza toppings
       - pizza size selectors are small, medium and large
-      - pizza toppings include cheese pepperoni
-      - user clicks submit button "pizza cost" label
-   -  Example Output: display area indicating:
-      - your "x" pizza with "x" and "y" will cost "z"
+      - pizza toppings include cheese, pepperoni, olives
+      - user clicks submit button with "pizza cost" label
+    -  Example Output:
+      - selector buttons with sizes to check (only one) PARSEINT
+      - selector buttons with toppings available (multiple values available) PARSEINT
+      - display area indicating order and cost
 
 - [ ] Create javascript for user input with submit function and test functionality
-  - Example Input: small pizz selected, cheese and pepperoni selected
-  - Example Output: user input registered (check in console log)
+    - Example Input: small pizza selected, cheese and pepperoni selected
+    - Example Output: user input registered in variables (check in console log)
+      - var = user size selected (one of three)
+      - var = user toppings selected (x of three)
+      - variable will be indexed to array in object
 
- - [ ] Create constructor in business logo for Pizza Object to hold above info. Create variable in user logic to define input and store in Pizza Object.
-  - Example Input: user input created as variables and correctly stored in object
-  - Example Output: object returns correct order for pizza
+ - [ ] Create constructor in business logo for Pizza Object (will be called Order) to hold above info. Create variable in user logic to define input and store in Object.
+    - Example Input: user input above defined as new Order and stored in Order object
+      - variables above = new Order (userSize, userToppings)
+    - Example Output: object returns correct order for pizza
       - Pizza key value in new object this.pizzaSize = new user order
       - Pizza key value in new object this.pizzaTopping = new user order
 
 - [ ] Create prototype for pizza object to compute cost of pizza
-  - Example Input: new object this.pizzaSize + new object this.pizzaTopping(s) = this.pizzaOrder
-  - Example Output: your "x" pizza with "x" and "y" will cost "z"
+    - Example Input: new object this.pizzaSize + new object this.pizzaTopping(s) = this.pizzaOrder
+    - Example Output: your "x" pizza with "x" and "y" will cost "z"
 
 - [ ] Store this in a git branch as meeting basic requirements for class
 
 - [ ] In new branch create html submit button for additional pizza order that displays new field with additional pizza order
-  - Example input: Add another pizza to your oder, same fields above
-  - Example output: previous order is increased and new display field will provide new feedback including previous order information and new order information displayed together
+    - Example input: Add another pizza to your oder, same fields above
+    - Example output: previous order is increased and new display field will provide new feedback including previous order information and new order information displayed together
 
 - [ ] Create new key value in Pizza Object, additional order
-  - Example input: newPizzaSize newPizzaToppings = this.additionalOrder
-  - Example output: this.additionalOrder = user input
+    - Example input: newPizzaSize newPizzaToppings = this.additionalOrder
+    - Example output: this.additionalOrder = user input
 
 - [ ] Update prototype with branch for pizza cost to include (if additional toppings)
-  - Example input: this.additionalOrder + (previous function)
-  - Example output: You ordered "number pizzas" pizzas with (x = define size and toppings and y = define size and toppings)
+    - Example input: this.additionalOrder + (previous function)
+    - Example output: You ordered "number pizzas" pizzas with (x = define size and toppings and y = define size and toppings)
 
 - [ ] Create object to store user info, create prototype to push user info into pizza
-  - Example Input: name and address
-  - Example Output: customer info object
+    - Example Input: name and address
+    - Example Output: customer info object
 
 ##Setup/Installation requirements
 * [visit my gh-page for Independent Project #4](https://suzirubi.github.io/ping-pong)
