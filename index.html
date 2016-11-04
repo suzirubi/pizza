@@ -4,58 +4,62 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Pizza Order</title>
   </head>
   <body>
     <div class="container">
       <h2>Order Pizza</h2>
-      <div class="pizzaOrder">
-        <form id="Order">
-          <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
             <h5>select pizza size:</h5>
-            <div class="radio">
-              <label for="small">
-              <input type="radio" name="size" value="small">
-              small
-              </label>
+            <form id="orderSize">
+              <div class="radio">
+                <label for="small">
+                <input type="radio" name="size" id="small" value="1" checked="">
+                small
+                </label>
+              </div>
+              <div class="radio">
+                <label for="medium">
+                <input type="radio" name="size" id="medium" value="2">
+                medium
+                </label>
+              </div>
+              <div class="radio">
+                <label for="large">
+                <input type="radio" name="size" id="large" value="3">
+                large
+                </label>
+              </div>
+              <div class="toppings">
+                <h5>select pizza toppings:</h5>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="typeTopping" value="pepperoni" id="pepperoni">
+                    pepperoni
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="typeTopping" value="cheese" id="cheese">
+                    cheese
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="typeTopping" value="olive" id="olive">
+                    olive
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-danger">submit</button>
+              </div>
             </div>
-            <div class="radio">
-              <label for="medium">
-              <input type="radio" name="size" value="medium">
-              medium
-              </label>
-            </div>
-            <div class="radio">
-              <label for="large">
-              <input type="radio" name="size" value="large">
-              large
-              </label>
-            </div>
+          </form>
+          <div class="orderDisplay">
+
           </div>
-          <div class="form-group">
-            <h5>select pizza toppings:</h5>
-            <div class="checkbox">
-              <label>
-                <input id="pepperoni" type="checkbox" value="pepperoni">
-                pepperoni
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input id="cheese" type="checkbox" value="cheese">
-                cheese
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input id="olive" type="checkbox" value="olive">
-                cheese
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
+        </div>
     </div>
   </body>
 </html>
