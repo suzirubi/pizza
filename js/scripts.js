@@ -1,7 +1,15 @@
 // begin business logic
 
+function PizzaOrder (size, toppingTotal) {
+  this.size = size;
+  this.toppingTotal = toppingTotal;
+}
 
-
+  // var toppingCostResult = [];
+  //
+  // $("input:checkbox[name=typeTopping]:checked").each(function() {
+  //   var userOrderToppings = $(this).val();
+  //   toppingCostResult.push(userOrderToppings);
 
 
 
@@ -14,18 +22,26 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userSizeInput = parseInt($("input[type='radio'][name='size']:checked").val());
-
+    console.log(userSizeInput);
 
     var userCheese = $("input:checkbox[name=typeTopping]:checked").val();
     var userOlive = $("input:checkbox[name=typeTopping]:checked").val();
     var userPepperoni = $("input:checkbox[name=typeTopping]:checked").val();
 
-    var toppingCostResult = [];
+    var toppingTotal = [];
 
     $("input:checkbox[name=typeTopping]:checked").each(function() {
       var userOrderToppings = $(this).val();
-      toppingCostResult.push(userOrderToppings);
+      toppingTotal.push(userOrderToppings);
     });
+
+    var newPizzaOrder = new PizzaOrder (userSizeInput, toppingTotal);
+
+    console.log(newPizzaOrder);
+
+
+
+    $("#prelimOrder").text("You ordered")
 
   });
 });

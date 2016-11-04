@@ -40,8 +40,8 @@ The instructions for the requirements of this project are as follows:
       - pizza toppings include cheese, pepperoni, olives
       - user clicks submit button with "pizza cost" label
     -  Example Output:
-      - selector buttons with sizes to check (only one) PARSEINT
-      - selector buttons with toppings available (multiple values available) PARSEINT
+      - radio buttons with sizes to check (only one) PARSEINT
+      - checkbox buttons with toppings available (multiple values available)
       - display area indicating order and cost
 
 - [ ] Create javascript for user input with submit function and test functionality
@@ -49,7 +49,7 @@ The instructions for the requirements of this project are as follows:
     - Example Output: user input registered in variables (check in console log)
       - var = user size selected (one of three)
       - var = user toppings selected (x of three)
-      - variable will be indexed to array in object
+      - variable will be indexed to array in object (may need to move the function that creates this array to business logic?)
 
  - [ ] Create constructor in business logo for Pizza Object (will be called Order) to hold above info. Create variable in user logic to define input and store in Object.
     - Example Input: user input above defined as new Order and stored in Order object
